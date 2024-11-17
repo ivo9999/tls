@@ -3,18 +3,28 @@ caCert:
   validForYears: 10
   subject:
     country: US
-    organization: Golang Demo Org
-    organizationalUnit: Certificate Management
+    organization: Sisle Inc
+    organizationalUnit: Brainrot
     locality: NY
     commonName: CA Certificate
 certs:
   go-demo.localtest.me:
     serial: 1
     validForYears: 1
-    dnsNames: ["go-demo.localtest.me", "go-demo-2.localtest.me"]
+    dnsNames: ["test.localtest.me", "test-2.localtest.me"]
     subject:
       country: US
-      organization: Golang Demo Org
-      organizationalUnit: go-demo department
+      organization: Sisle Inc
+      organizationalUnit: Brainrot
       locality: NY
-      commonName: go-demo.localtest.me
+      commonName: test.localtest.me
+  go-demo-client.localtest.me:
+    serial: 1
+    validForYears: 1
+    dnsNames: ["test.localtest.me", "test-2.localtest.me"]
+    subject:
+      country: US
+      organization: Sisle Inc
+      organizationalUnit: Brainrot
+      locality: NY
+      commonName: client.localtest.me
